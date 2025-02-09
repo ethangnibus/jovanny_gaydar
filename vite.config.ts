@@ -9,4 +9,5 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  base: '/jovanny_gaydar/',  // <-- This is the important change
 })
