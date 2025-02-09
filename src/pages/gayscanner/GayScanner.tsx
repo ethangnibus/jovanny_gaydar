@@ -100,7 +100,7 @@ const GayScanner: React.FC<GayScannerProps> = ({
                     <>
                         <div className="flex w-full h-8 justify-center items-center">
                             <div className="flex bg-black/50 rounded-full pt-2 px-2 border-2 ">
-                                <p className="flex font-luckiest-guy bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 text-transparent bg-clip-text text-4xl pointer-events-none">Are you even gay?</p>
+                                <p className="flex font-luckiest-guy bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 text-transparent bg-clip-text text-2xl pointer-events-none">Are you even gay?</p>
                             </div>
                         </div>
                         <div className={`flex bg-blue-500 w-min p-2 rounded-full bg-white/50 justify-between items-center space-x-8 border-2 shadow ${blurActive ? "blur-sm animate-ping" : ""}`}>
@@ -116,21 +116,21 @@ const GayScanner: React.FC<GayScannerProps> = ({
                     <>
                         {showYou && !showAre && (
                             <div className="flex w-full h-8 justify-center items-center self-center">
-                                <p className="flex font-luckiest-guy bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 text-transparent bg-clip-text text-4xl pointer-events-none">You</p>
+                                <p className="flex font-luckiest-guy bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 text-transparent bg-clip-text text-3xl animate-ping pointer-events-none">You</p>
                             </div>
                         )}
 
                         {showAre && !showGay && (
                             <div className="flex w-full h-8 justify-center items-center">
-                                <p className="flex font-luckiest-guy bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text text-4xl pointer-events-none">Are</p>
+                                <p className="flex font-luckiest-guy bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text text-3xl animate-ping pointer-events-none">Are</p>
                             </div>
                         )}
 
                         {showGay && (
-                            <div className="flex flex-col w-full h-8 justify-center items-center space-x-2">
-                                <p className="flex font-luckiest-guy bg-gradient-to-r from-red-500 to-orange-500 text-transparent bg-clip-text text-6xl pointer-events-none">{word1}</p>
-                                <p className="flex font-luckiest-guy bg-gradient-to-r from-yellow-500 to-green-500 text-transparent bg-clip-text text-5xl pointer-events-none">{word2}</p>
-                                <p className="flex font-luckiest-guy bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text text-6xl pointer-events-none">{word3}</p>
+                            <div className="flex flex-col w-full h-8 justify-center items-center space-x-2 animate-bounce">
+                                <p className="flex font-luckiest-guy bg-gradient-to-r from-red-500 to-orange-500 text-transparent bg-clip-text text-5xl pointer-events-none">{word1}</p>
+                                <p className="flex font-luckiest-guy bg-gradient-to-r from-yellow-500 to-green-500 text-transparent bg-clip-text text-3xl pointer-events-none">{word2}</p>
+                                <p className="flex font-luckiest-guy bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text text-5xl pointer-events-none">{word3}</p>
                             </div>
                         )}
                     </>

@@ -12,7 +12,6 @@ function App() {
 
   function scanGayness(): void {
     setScanningGayness(true);
-    console.log("you're gay")
   }
 
   return (
