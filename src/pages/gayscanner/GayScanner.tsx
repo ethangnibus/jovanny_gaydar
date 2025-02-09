@@ -95,7 +95,7 @@ const GayScanner: React.FC<GayScannerProps> = ({
 
     return (
         <div className={`${className} flex flex-1 w-full justify-center items-center z-10`}>
-            <div className="flex flex-col aspect-square h-full justify-around items-center">
+            <div className="flex flex-col aspect-square h-full justify-around items-center rounded-full border-2 bg-white/10 border-green">
                 {showGayTimer ? (
                     <>
                         <div className="flex w-full h-8 justify-center items-center">
